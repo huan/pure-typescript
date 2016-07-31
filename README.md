@@ -13,6 +13,7 @@ But there's no such a tool for me to run typescript smoothly for my need. for ex
 2. `tsconfig.json` is a too complicated
 3. `typings.json` is too complicated
 4. `index.d.ts` is too complicated
+5. set default file extension to `.ts`
 5. run typescript in browser needs a lot of configuration(too complicated)
 
 I believe that run typescript should as easy as run `node` in server, or `javascript` in browser, this is the reason I decided to write a new tool to solve those problems.
@@ -29,3 +30,8 @@ I believe that run typescript should as easy as run `node` in server, or `javasc
 * [Fail to load pure typescript module from node_moules](https://github.com/TypeStrong/ts-node/issues/155)
 * [ts-node cannot import pure typescript npm module inside node_modules directory](https://github.com/TypeStrong/ts-node/issues/158)
 
+# Usage
+
+```shell
+$ pts server.ts
+```
