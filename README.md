@@ -1,5 +1,5 @@
 # pure-typescript
-Pure Typescript Loader with Module support and No Compile Needed
+Pure Typescript Loader with Module/Library support and No Compile Needed
 
 # The Pain of Pure Typescript Developer
 
