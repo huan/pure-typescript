@@ -57,7 +57,7 @@ $ purets server.ts
 2. publish npm module: pure-typescript
 
 # Known Issues & Support
-Github Issue - https://github.com/zixia/wechaty/issues
+Github Issue - https://github.com/zixia/pure-typescript/issues
 
 Author
 -----------------
