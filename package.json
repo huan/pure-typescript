@@ -1,7 +1,7 @@
 {
   "name": "pure-typescript",
   "version": "0.0.1",
-  "description": "Pure TypeScript for node & browser",
+  "description": "Pure TypeScript Executor for Node & Browser with Zero Setting",
   "main": "src/pure-typescript.js",
   "scripts": {
     "test": "echo test"

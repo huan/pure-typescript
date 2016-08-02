@@ -1,5 +1,5 @@
 # pure-typescript
-Pure Typescript Loader with Module/Library support and No Compile Needed
+Pure Typescript Loader for Node & Browser with Zero Setting
 
 **DO NOT USE ME IN PRODUCTION(YET)**
 **BECAUSE I AM UNDER HEAVY DEVELOPMENT NOW**
