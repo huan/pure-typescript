@@ -1,8 +1,8 @@
 # pure-typescript
 Pure Typescript Loader with Module/Library support and No Compile Needed
 
-** DO NOT USE ME IN PRODUCTION(YET) **
-** BECAUSE I AM UNDER HEAVY DEVELOPMENT NOW **
+**DO NOT USE ME IN PRODUCTION(YET)**
+**BECAUSE I AM UNDER HEAVY DEVELOPMENT NOW**
 
 # Why Pure TypeScript?
 
