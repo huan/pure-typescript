@@ -1,0 +1,38 @@
+{
+  "name": "pure-typescript",
+  "version": "0.0.1",
+  "description": "Pure TypeScript for node & browser",
+  "main": "src/pure-typescript.js",
+  "scripts": {
+    "test": "echo test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zixia/pure-typescript.git"
+  },
+  "keywords": [
+    "pure-typescript",
+    "purets",
+    "typescript"
+  ],
+  "author": "Zhuohuan LI <zixia@zixia.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zixia/pure-typescript/issues"
+  },
+  "homepage": "https://github.com/zixia/pure-typescript#readme",
+  "dependencies": {
+    "typescript": "^2.0.0"
+  },
+  "files": [
+   "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "src/pure-typescript.js",
+    "bin/purets.js"
+  ],
+  "bin": {
+    "purets": "bin/purets.js"
+  }
+}
