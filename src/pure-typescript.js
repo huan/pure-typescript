@@ -1,6 +1,8 @@
 /**
  * Pure TypeScript
- * 
+ *
+ * Treat typescript as the first class citizen!
+ *  
  * for Full Stack TypeScript Developer:
  *  - No more compile
  *  - Zero settings
@@ -40,13 +42,22 @@
       // TODO: --dev & --prod settings switcher
     })
 
-    const output = ts.transpileModule(tsContent, {
+    const result = ts.transpileModule(tsContent, {
       filename
       , compilerOptions: DEFAULT_COMPILER_OPTIONS
       , reportDiagnostics: true
     })
-    // console.log(output)
-    module._compile(output.outputText, filename)
+    console.log(result)
+
+    //  const diagnosticList = result.diagnostics ?
+    //     formatDiagnostics(result.diagnostics, options, cwd, ts) :
+    //     []
+
+    //   if (diagnosticList.length) {
+    //     throw new TSError(diagnosticList)
+    //   }
+
+    module._compile(result.outputText, filename)
   }
 
   require.extensions['.ts'] = pureTypeScript

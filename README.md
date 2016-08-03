@@ -1,34 +1,48 @@
 # pure-typescript
-Pure Typescript Loader for Node & Browser with Zero Setting
+Pure Typescript Loader for running typescript death easy as javascript
 
-**DO NOT USE ME IN PRODUCTION(YET)**
-**BECAUSE I AM UNDER HEAVY DEVELOPMENT NOW**
+# Goal
+
+1. TypeScript be treated as First Class Citizen 
+1. Support Pure TypeScript modules/library in node_moduels(done by [#1](https://github.com/zixia/pure-typescript/issues/1)
+2. Zero Configuration in Server(in progress)
+2. One Line Configuration in Browser(TBD [#2](https://github.com/zixia/pure-typescript/issues/2))
+
+# Requirement
+
+Those requirements are little bleeding edge because I believe pure typescript developers would love them.(I am)
+
+1. NodeJS v6 or above
+1. TypeScript v2 or above 
 
 # Why Pure TypeScript?
 
-I love typescript(because of angular 2), and I switched all my javascript code to typescript now, including my server components.
+I love typescript(because of angular 2), and I switched all my javascript code to typescript now,
+including my server components.
 
-I also would like to write pure typescript npm modules, which I think is no need to compile to javascript any more, because my environment is a `full typescript stack`.
+I also would like to write pure typescript npm modules,
+which I think there is no need to compile to javascript any more,
+because my environment is a `full typescript stack`,
+compile should only be ran at the final executation step.
 
-But there's no such a tool for me to run typescript smoothly for my need. for example:
+There also many developers have the same idea as me.(see: The PAINs of Pure TypeScript Developer) 
+
+But there's no such a tool for us to run typescript smoothly for our need. for example:
 
 1. `ts-node` don't support load pure typescript library/module in node_modules directory
 2. `tsconfig.json` is a too complicated
 3. `typings.json` is too complicated
 4. `index.d.ts` is too complicated
-5. set default file extension to `.ts`
+5. default file extension should be `.ts`, and should be the first dependencies file extention
 5. run typescript in browser needs a lot of configuration(too complicated)
-1. `.ts` is not the first dependencies file extention search 1st order
 
-I believe that run typescript should as easy as run `node` in server, or `javascript` in browser, this is the reason I decided to write a new tool to solve those problems.
+I believe that run typescript should be put at first class, 
+and be ran as easy as `node` in server, or `javascript` in browser,
+without any more complicated configures.
+this is the reason I decided to write this new tool `pure-typescript` 
+to make pure-typescript developers more happy.
 
-# Goal
-
-1. Support Pure TypeScript modules/library in node_moduels
-2. Run typescript as Zero-Configuration
-2. One Line Configuration in browser to run Pure TypeScript directly
-
-# The PAIN of Pure Typescript Developer
+# The PAINs of Pure Typescript Developer
 
 * [Can't have a "pure" typescript library.](https://github.com/Microsoft/TypeScript/issues/5225#issuecomment-147492261)
 * [Fail to load pure typescript module from node_moules](https://github.com/TypeStrong/ts-node/issues/155)
@@ -36,8 +50,25 @@ I believe that run typescript should as easy as run `node` in server, or `javasc
 
 # Usage
 
+## Server
+
+Just replace `node` by `purets`
+
 ```shell
-$ purets server.ts
+$ npm install pure-typescript
+
+$ purets main.ts
+```
+
+## Browser
+
+Just include pure-typescript in html head
+
+```html
+<script src='//npmcdn.com/pure-typescript'></script>
+<script>
+  var pts = PureTypeScript('main.ts')
+</script>
 ```
 
 # Best Practice
@@ -58,6 +89,12 @@ $ purets server.ts
 
 # Known Issues & Support
 Github Issue - https://github.com/zixia/pure-typescript/issues
+
+# Todo List
+
+[ ] Enable TypeScript in Browser by `script src=//npmcdn.com/pure-typescript`,
+without any other configuration(like SystemJS?)
+[ ] Cache management for large project to speed up startup loading time
 
 Author
 -----------------
