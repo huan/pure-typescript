@@ -2,17 +2,31 @@
 'use strict'
 
 const path = require('path')
+const fs = require('fs')
 
 require('../src/pure-typescript')
 
-const args  = process.argv.slice(2)
 const cwd   = process.cwd()
+let args  = process.argv.slice(2)
 
-let filename = args[0]
+let filename = path.resolve(cwd,args[0])
+
 if (!/\.ts$/i.test(filename)) {
-  filename += '.ts'
+  try { fs.accessSync(filename, fs.F_OK) }
+  catch (e) { // not exist
+    try {
+      fs.accessSync(filename + '.ts', fs.F_OK) 
+      filename += '.ts'
+    } catch (_) { // '.ts' also not exist
+      throw e // throw origal file not found error
+    }
+  }
 }
 
-const fullFilename = path.join(cwd, filename)
+// proxy argv to the end program
+process.argv = [
+  ...process.argv.slice(0,1)
+  , ...process.argv.slice(2)
+]
 
-require(fullFilename)
+require(filename)
