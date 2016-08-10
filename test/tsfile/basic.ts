@@ -1,2 +1,2 @@
-let n: number
-n = 3
+let i: number
+i = 3

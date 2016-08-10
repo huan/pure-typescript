@@ -13,7 +13,7 @@
  */
 'use strict'
 
-const test = require('tape').test
+const test = require('tape')
 const sinon = require('sinon')
 
 const pureTypeScript = require('..')
@@ -36,8 +36,10 @@ test('PureTypeScript smoking test', t => {
 
 
   spy.reset()
-    pureTypeScript(mockModule, 'test/tsfile/basic-error.ts')
-    console.log(spy.getCall(0).args[0])
+pureTypeScript(mockModule, 'test/tsfile/basic-error.ts')
+console.log('###')
+console.log(spy.getCall(0).args[0])
+console.log('###')
   // t.throws(_ => {
   //   pureTypeScript(mockModule, 'test/tsfile/basic-error.ts')
   // }, 'should throw when compile error')

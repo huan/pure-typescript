@@ -96,6 +96,9 @@ Github Issue - https://github.com/zixia/pure-typescript/issues
 without any other configuration(like SystemJS?)
 [ ] Cache management for large project to speed up startup loading time
 
+# Reference
+1. [Using the TypeScript Compiler API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API)
+
 Author
 -----------------
 Zhuohuan LI <zixia@zixia.net> (http://linkedin.com/in/zixia)

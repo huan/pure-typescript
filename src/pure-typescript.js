@@ -41,11 +41,12 @@
       , {
       // TODO: --dev & --prod settings switcher
     })
+    const reportDiagnostics = true
 
     const result = ts.transpileModule(tsContent, {
       filename
-      , compilerOptions: DEFAULT_COMPILER_OPTIONS
-      , reportDiagnostics: true
+      , compilerOptions
+      , reportDiagnostics
     })
     console.log(result)
 
