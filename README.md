@@ -65,7 +65,7 @@ $ purets main.ts
 Just include pure-typescript in html head
 
 ```html
-<script src='//npmcdn.com/pure-typescript'></script>
+<script src='//unpkg.com/pure-typescript'></script>
 <script>
   var pts = PureTypeScript('main.ts')
 </script>
@@ -92,7 +92,7 @@ Github Issue - https://github.com/zixia/pure-typescript/issues
 
 # Todo List
 
-[ ] Enable TypeScript in Browser by `script src=//npmcdn.com/pure-typescript`,
+[ ] Enable TypeScript in Browser by `script src=//unpkg.com/pure-typescript`,
 without any other configuration(like SystemJS?)
 [ ] Cache management for large project to speed up startup loading time
 
