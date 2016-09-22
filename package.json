@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/zixia/pure-typescript#readme",
   "dependencies": {
-    "typescript": "^2.0.0",
+    "typescript": "^2.0.3",
     "yargs": "^5.0.0"
   },
   "files": [
