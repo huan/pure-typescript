@@ -4,7 +4,7 @@
   "description": "Pure TypeScript Executor for Node & Browser with Zero Setting",
   "main": "src/pure-typescript.js",
   "scripts": {
-    "test": "tape test/**/*.spec.js"
+    "test": "tap test/**/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/zixia/pure-typescript#readme",
   "dependencies": {
+    "@types/node": "^6.0.45",
+    "source-map-support": "^0.4.5",
     "typescript": "^2.0.3",
+    "typescript-simple": "^5.0.2",
     "yargs": "^6.0.0"
   },
   "files": [
@@ -31,13 +34,13 @@
     "CHANGELOG.md",
     "LICENSE",
     "src/pure-typescript.js",
-    "bin/purets.js"
+    "bin/ts.js"
   ],
   "bin": {
-    "purets": "bin/purets.js"
+    "ts": "bin/ts.js"
   },
   "devDependencies": {
     "sinon": "^1.17.6",
-    "tape": "^4.6.1"
+    "tap": "^7.1.2"
   }
 }

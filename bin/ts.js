@@ -21,7 +21,7 @@ const argv = require('yargs')
     .epilog('copyright 2016')
     .argv
 
-console.log(argv)
+// console.log(argv)
 
 const path = require('path')
 const fs = require('fs')
