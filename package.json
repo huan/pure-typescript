@@ -34,10 +34,10 @@
     "CHANGELOG.md",
     "LICENSE",
     "src/pure-typescript.js",
-    "bin/ts.js"
+    "bin/pts.js"
   ],
   "bin": {
-    "ts": "bin/ts.js"
+    "pts": "bin/pts.js"
   },
   "devDependencies": {
     "sinon": "^1.17.6",
