@@ -26,7 +26,7 @@
     "source-map-support": "^0.4.5",
     "typescript": "^2.0.3",
     "typescript-simple": "^5.0.2",
-    "yargs": "^6.0.0"
+    "yargs": "^6.2.0"
   },
   "files": [
     "package.json",
