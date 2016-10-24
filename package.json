@@ -25,7 +25,7 @@
     "@types/node": "^6.0.45",
     "source-map-support": "^0.4.5",
     "typescript": "^2.0.3",
-    "typescript-simple": "^5.0.2",
+    "typescript-simple": "^6.0.0",
     "yargs": "^6.3.0"
   },
   "files": [
