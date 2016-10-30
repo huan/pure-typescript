@@ -23,7 +23,7 @@
   "homepage": "https://github.com/zixia/pure-typescript#readme",
   "dependencies": {
     "@types/node": "^6.0.45",
-    "source-map-support": "^0.4.5",
+    "source-map-support": "^0.4.6",
     "typescript": "^2.0.6",
     "typescript-simple": "^6.0.0",
     "yargs": "^6.3.0"
