@@ -24,7 +24,7 @@
   "dependencies": {
     "@types/node": "^6.0.45",
     "source-map-support": "^0.4.6",
-    "typescript": "^2.0.7",
+    "typescript": "^2.0.8",
     "typescript-simple": "^6.0.0",
     "yargs": "^6.3.0"
   },
