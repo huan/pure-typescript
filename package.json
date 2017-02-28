@@ -1,6 +1,6 @@
 {
   "name": "pure-typescript",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Pure TypeScript Executor for Node & Browser with Zero Setting",
   "main": "src/pure-typescript.js",
   "scripts": {

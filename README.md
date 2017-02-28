@@ -83,9 +83,11 @@ Just include pure-typescript in html head
 
 # Version History
 
-## v0.0.1 (master)
+## v0.0.3 (master)
 1. run `purets` like node: `purets pure-typescript-file.ts`
+1. support load pure typescript module in `node_modules` directory
 2. publish npm module: pure-typescript
+1. proxy right argv to ts program
 
 # Known Issues & Support
 Github Issue - https://github.com/zixia/pure-typescript/issues

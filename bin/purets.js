@@ -23,7 +23,7 @@ if (!/\.ts$/i.test(filename)) {
   }
 }
 
-// proxy argv to the end program
+// proxy argv to the ts program
 process.argv = [
   ...process.argv.slice(0,1)
   , ...process.argv.slice(2)
