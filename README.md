@@ -1,9 +1,13 @@
 # pure-typescript
 Pure Typescript Loader for running typescript death easy as javascript
 
+# Under Construction...
+
+Please come back later if you are interesting Pupre-Typescript project.
+
 # Goal
 
-1. TypeScript be treated as First Class Citizen 
+1. TypeScript be treated as First Class Language 
 1. Support Pure TypeScript modules/library in node_moduels(done by [#1](https://github.com/zixia/pure-typescript/issues/1)
 2. Zero Configuration in Server(in progress)
 2. One Line Configuration in Browser(TBD [#2](https://github.com/zixia/pure-typescript/issues/2))
@@ -52,12 +56,12 @@ to make pure-typescript developers more happy.
 
 ## Server
 
-Just replace `node` by `purets`
+Just replace `node` by `ts`
 
 ```shell
 $ npm install pure-typescript
 
-$ purets main.ts
+$ ts main.ts
 ```
 
 ## Browser
@@ -65,9 +69,9 @@ $ purets main.ts
 Just include pure-typescript in html head
 
 ```html
-<script src='//npmcdn.com/pure-typescript'></script>
+<script src='//unpkg.com/pure-typescript'></script>
 <script>
-  var pts = PureTypeScript('main.ts')
+  var tsMain = PureTypeScript('main.ts')
 </script>
 ```
 
@@ -94,9 +98,12 @@ Github Issue - https://github.com/zixia/pure-typescript/issues
 
 # Todo List
 
-[ ] Enable TypeScript in Browser by `script src=//npmcdn.com/pure-typescript`,
+[ ] Enable TypeScript in Browser by `script src=//unpkg.com/pure-typescript`,
 without any other configuration(like SystemJS?)
 [ ] Cache management for large project to speed up startup loading time
+
+# Reference
+1. [Using the TypeScript Compiler API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API)
 
 Author
 -----------------
