@@ -1,4 +1,7 @@
-# pure-typescript
+# pure-typescript (DEPRECATED)
+
+Huan(20200317): This modules is deprecated because it's not necessary anymore.
+
 Pure Typescript Loader for running typescript death easy as javascript
 
 # Under Construction...
